@@ -19,7 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -57,7 +57,180 @@ html, body {
     height: 100%;
 }
 
-img {
-	width: 33%;
-	border-radius: 100%;
+html {
+	font-size: 62.5%;
 }
+
+// Variables
+@customfont: 'Nunito', sans-serif;
+@headerfont: 'Bebas Neue', cursive;
+@myfontcolor: #a73e1b;
+@mybackground: #fff4ef;
+
+// Mixins
+.desktop-width() {
+	width: 90%;
+	margin: 0 auto;
+}
+.mobile-width() {
+	width: 100%;
+}
+.blurb-width() {
+	width: 45%;
+}
+.flexbox() {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.button-styles() {
+	background-color: @myfontcolor;
+	color: @mybackground;
+	padding: 10px 20px;
+	border-radius: 6px;
+	a {
+		text-decoration: none;
+		color: @mybackground;
+	}
+	@media (max-width: 500px) {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+* {
+	border: 1px solid black;
+}
+
+// Styles
+h1, h2, h3, h4, h5, h6 {
+	font-family: @headerfont;
+}
+
+body {
+	font-family: @customfont;
+	font-size: 2rem;
+	color: @myfontcolor;
+	p {
+		line-height: 1.2;
+		}//end of p
+	h1 {
+		font-size: 5rem;
+		@media (max-width: 500px) {
+			font-size: 3rem;
+			}//end of query
+	}//end of h1
+	h2 {
+		font-size: 3rem;
+		@media (max-width: 500px) {
+			font-size: 2rem;
+		}//end of query
+	}//end of h2
+		@media (max-width: 500px) {
+			font-size: 1.6em;
+		}//end of query
+	nav {
+		.desktop-width();
+		.flexbox();
+		flex-direction: row;
+		justify-content: flex-start;
+		a {
+			padding-right: 2%;
+			text-decoration: none;
+			color: @myfontcolor;
+			font-weight: bold;
+		}//end of anchor
+	}//end of nav
+	.profile {
+		height: 40vh;
+		.desktop-width();
+		background-color: @mybackground;
+		padding: 5% 2%;
+		.flexbox();
+		margin-bottom: 2vh;
+		button {
+			align-self: flex-start;
+			.button-styles();
+		}
+		.divider {
+			border-bottom: 1px solid gray;
+		}
+		img {
+			width: 33%;
+			border-radius: 100%;
+		}//end of image
+	}//end of profile
+	.intro-skills {
+		.desktop-width();
+		.flexbox();
+		flex-direction: row;
+		margin-bottom: 2vh;
+		button {
+			.button-styles();
+		}
+		.intro {
+			@media (max-width: 500px) {
+				padding-bottom: 2vh;
+			}
+		}
+		@media (max-width: 500px) {
+			flex-direction: column;
+			.blurb {
+			width: 100%;
+			} //End of blurb
+		} // End of media query
+	} // End of intro skills
+	.blurb {
+		.blurb-width();
+	}	// End of blurb
+	.work {
+		.desktop-width();
+		margin-bottom: 2vh;
+		table {
+			width: 100%;
+			td, th {
+				border: 1px solid black;
+				font-size: 0.8em;
+				text-align: left;
+			}
+			th {
+				font-family: @headerfont;
+			}
+			tr:nth-child(even) {
+				background-color: @mybackground;
+			}
+		}//End of table
+	} // End of work history
+	.contact {
+		.desktop-width();
+		background: @mybackground;
+		form {
+			.flexbox();
+			flex-direction: row;
+			flex-wrap: wrap;
+			label {
+				width: 25%;
+			}
+			input {
+				width: 72%;
+			}
+			textarea {
+				width: 72%;
+			}
+			button {
+				margin-left: 28%;
+			.button-styles();
+			}
+			@media (max-width: 500px) {
+				flex-direction: column;
+				input, textarea {
+				width: 100%;
+				}//end of input/textarea
+			}//end of query
+			}//end of form
+		}//end of contact
+		footer {
+			.desktop-width();
+			text-align: center;
+		}
+	} // End of body

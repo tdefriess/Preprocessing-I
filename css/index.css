@@ -85,7 +85,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -134,7 +133,209 @@ html,
 body {
   height: 100%;
 }
-img {
+html {
+  font-size: 62.5%;
+}
+* {
+  border: 1px solid black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bebas Neue', cursive;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  color: #a73e1b;
+}
+body p {
+  line-height: 1.2;
+}
+body h1 {
+  font-size: 5rem;
+}
+@media (max-width: 500px) {
+  body h1 {
+    font-size: 3rem;
+  }
+}
+body h2 {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  body h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    font-size: 1.6em;
+  }
+}
+body nav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+body nav a {
+  padding-right: 2%;
+  text-decoration: none;
+  color: #a73e1b;
+  font-weight: bold;
+}
+body .profile {
+  height: 40vh;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff4ef;
+  padding: 5% 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+body .profile button {
+  align-self: flex-start;
+  background-color: #a73e1b;
+  color: #fff4ef;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+body .profile button a {
+  text-decoration: none;
+  color: #fff4ef;
+}
+@media (max-width: 500px) {
+  body .profile button {
+    width: 100%;
+    margin: 0;
+  }
+}
+body .profile .divider {
+  border-bottom: 1px solid gray;
+}
+body .profile img {
   width: 33%;
   border-radius: 100%;
+}
+body .intro-skills {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 2vh;
+}
+body .intro-skills button {
+  background-color: #a73e1b;
+  color: #fff4ef;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+body .intro-skills button a {
+  text-decoration: none;
+  color: #fff4ef;
+}
+@media (max-width: 500px) {
+  body .intro-skills button {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  body .intro-skills .intro {
+    padding-bottom: 2vh;
+  }
+}
+@media (max-width: 500px) {
+  body .intro-skills {
+    flex-direction: column;
+  }
+  body .intro-skills .blurb {
+    width: 100%;
+  }
+}
+body .blurb {
+  width: 45%;
+}
+body .work {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2vh;
+}
+body .work table {
+  width: 100%;
+}
+body .work table td,
+body .work table th {
+  border: 1px solid black;
+  font-size: 0.8em;
+  text-align: left;
+}
+body .work table th {
+  font-family: 'Bebas Neue', cursive;
+}
+body .work table tr:nth-child(even) {
+  background-color: #fff4ef;
+}
+body .contact {
+  width: 90%;
+  margin: 0 auto;
+  background: #fff4ef;
+}
+body .contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body .contact form label {
+  width: 25%;
+}
+body .contact form input {
+  width: 72%;
+}
+body .contact form textarea {
+  width: 72%;
+}
+body .contact form button {
+  margin-left: 28%;
+  background-color: #a73e1b;
+  color: #fff4ef;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+body .contact form button a {
+  text-decoration: none;
+  color: #fff4ef;
+}
+@media (max-width: 500px) {
+  body .contact form button {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  body .contact form {
+    flex-direction: column;
+  }
+  body .contact form input,
+  body .contact form textarea {
+    width: 100%;
+  }
+}
+body footer {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
