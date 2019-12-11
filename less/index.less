@@ -144,6 +144,7 @@ body {
 		padding: 5% 2%;
 		.flexbox();
 		margin-bottom: 2vh;
+		border: 1px solid @myfontcolor;
 		button {
 			align-self: flex-start;
 			.button-styles();
@@ -161,8 +162,14 @@ body {
 		.flexbox();
 		flex-direction: row;
 		margin-bottom: 2vh;
+		p {
+			margin: 2vh 0;
+		}
 		button {
 			.button-styles();
+		}
+		ul {
+			line-height: 2;
 		}
 		.intro {
 			@media (max-width: 500px) {
@@ -198,8 +205,11 @@ body {
 		}//End of table
 	} // End of work history
 	.contact {
+		border: 1px solid @myfontcolor;
+		padding: 1%;
 		.desktop-width();
 		background: @mybackground;
+		margin-bottom: 2vh;
 		form {
 			.flexbox();
 			flex-direction: row;

@@ -136,9 +136,6 @@ body {
 html {
   font-size: 62.5%;
 }
-* {
-  border: 1px solid black;
-}
 h1,
 h2,
 h3,
@@ -201,6 +198,7 @@ body .profile {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 2vh;
+  border: 1px solid #a73e1b;
 }
 body .profile button {
   align-self: flex-start;
@@ -235,6 +233,9 @@ body .intro-skills {
   flex-direction: row;
   margin-bottom: 2vh;
 }
+body .intro-skills p {
+  margin: 2vh 0;
+}
 body .intro-skills button {
   background-color: #a73e1b;
   color: #fff4ef;
@@ -250,6 +251,9 @@ body .intro-skills button a {
     width: 100%;
     margin: 0;
   }
+}
+body .intro-skills ul {
+  line-height: 2;
 }
 @media (max-width: 500px) {
   body .intro-skills .intro {
@@ -288,9 +292,12 @@ body .work table tr:nth-child(even) {
   background-color: #fff4ef;
 }
 body .contact {
+  border: 1px solid #a73e1b;
+  padding: 1%;
   width: 90%;
   margin: 0 auto;
   background: #fff4ef;
+  margin-bottom: 2vh;
 }
 body .contact form {
   display: flex;
