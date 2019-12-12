@@ -1,1 +1,349 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bebas Neue', cursive;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  color: #a73e1b;
+}
+body p {
+  line-height: 1.2;
+}
+body h1 {
+  font-size: 5rem;
+}
+@media (max-width: 500px) {
+  body h1 {
+    font-size: 3rem;
+  }
+}
+body h2 {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  body h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    font-size: 1.6em;
+  }
+}
+body nav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+body nav a {
+  padding-right: 2%;
+  text-decoration: none;
+  color: #a73e1b;
+  font-weight: bold;
+}
+body .profile {
+  height: 40vh;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff4ef;
+  padding: 5% 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  border: 1px solid #a73e1b;
+}
+body .profile button {
+  align-self: flex-start;
+  background-color: #a73e1b;
+  color: #fff4ef;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+body .profile button a {
+  text-decoration: none;
+  color: #fff4ef;
+}
+@media (max-width: 500px) {
+  body .profile button {
+    width: 100%;
+    margin: 0;
+  }
+}
+body .profile .divider {
+  border-bottom: 1px solid gray;
+}
+body .profile img {
+  width: 33%;
+  border-radius: 100%;
+}
+body .intro-skills {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 2vh;
+}
+body .intro-skills p {
+  margin: 2vh 0;
+}
+body .intro-skills button {
+  background-color: #a73e1b;
+  color: #fff4ef;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+body .intro-skills button a {
+  text-decoration: none;
+  color: #fff4ef;
+}
+@media (max-width: 500px) {
+  body .intro-skills button {
+    width: 100%;
+    margin: 0;
+  }
+}
+body .intro-skills ul {
+  line-height: 2;
+}
+@media (max-width: 500px) {
+  body .intro-skills .intro {
+    padding-bottom: 2vh;
+  }
+}
+@media (max-width: 500px) {
+  body .intro-skills {
+    flex-direction: column;
+  }
+  body .intro-skills .blurb {
+    width: 100%;
+  }
+}
+body .blurb {
+  width: 45%;
+}
+body .work {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2vh;
+}
+body .work table {
+  width: 100%;
+}
+body .work table td,
+body .work table th {
+  border: 1px solid black;
+  font-size: 0.8em;
+  text-align: left;
+}
+body .work table th {
+  font-family: 'Bebas Neue', cursive;
+}
+body .work table tr:nth-child(even) {
+  background-color: #fff4ef;
+}
+body .contact {
+  border: 1px solid #a73e1b;
+  padding: 1%;
+  width: 90%;
+  margin: 0 auto;
+  background: #fff4ef;
+  margin-bottom: 2vh;
+}
+body .contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body .contact form label {
+  width: 25%;
+}
+body .contact form input {
+  width: 72%;
+}
+body .contact form textarea {
+  width: 72%;
+}
+body .contact form button {
+  margin-left: 28%;
+  background-color: #a73e1b;
+  color: #fff4ef;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+body .contact form button a {
+  text-decoration: none;
+  color: #fff4ef;
+}
+@media (max-width: 500px) {
+  body .contact form button {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  body .contact form {
+    flex-direction: column;
+  }
+  body .contact form input,
+  body .contact form textarea {
+    width: 100%;
+  }
+}
+body footer {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}

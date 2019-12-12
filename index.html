@@ -7,13 +7,92 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Nunito:400,400i,700,700i&display=swap" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact Me</a>
+    </nav>
+    <section class="profile">
+      <img src="images\portrait.jpg" alt="Who is this handsome devil?">
+      <h1>Tyler de Friess - Web Dev</h1>
+      <h2>Making the internet more aesthetic one site at a time.</h2>
+      <div class="divider"></div>
+      <p>I'm eager to bring my expertise to bear to improve your website. Contact me now to see how I can help you.</p>
+      <button type="button" name="button"><a href="mailto:tyler.defriess@gmail.com">Email Me</a></button>
+    </section>
+  </header>
+  <section class='intro-skills'>
+    <div class="intro blurb">
+      <h2>Full Stack Web Developer</h2>
+      <p>I have completed the Pokedex and built a team that can take on any type matchup. Now that I've defeated the Pokemon League, I am the most powerful trainer in the world!</p>
+      <button type="button" name="button"><a href="https://tdefriess.github.io/">See my portfolio</a></button>
+    </div>
+    <div class="skills blurb">
+      <h2>Some skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Less</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+  </section>
+  <section class="work">
+    <h2>Work History</h2>
+    <table>
+      <tr>
+        <th>Years</th>
+        <th>Company</th>
+        <th>Title</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Baxter</td>
+        <td>Production Technician</td>
+        <td>Operated Kiefel Machine</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Manpower</td>
+        <td>Filling Operator</td>
+        <td>Filled IV Bags</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>[B]Ski's</td>
+        <td>Lead Driver</td>
+        <td>Delivered Delicious Food</td>
+      </tr>
+    </table>
+  </section>
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-me" action="index.html" method="post">
+      <label for="name">Your Name</label>
+      <input type="text" id="yourname" name="yourname" value="" placeholder="Your name">
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" value="" placeholder="Your email">
+
+      <label for="subject">Subject</label>
+      <input type="subject" id="subject" name="subject" value="" placeholder="Subject">
+      <label for="message">Your Message</label>
+      <textarea name="message" id="message" placeholder="Write something..."></textarea>
+      <button type="submit" name="submit">Submit</button>
+    </form>
+  </section>
+  <footer>
+    <p>Copyright Tyler de Friess 2019</p>
+  </footer>
 </body>
 </html>
